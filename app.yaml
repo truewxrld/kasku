@@ -1,0 +1,6 @@
+kind: wasmer.io/App.v0
+name: kasku
+package: .
+env:
+  SESSION_DRIVER: file
+  CACHE_STORE: file
