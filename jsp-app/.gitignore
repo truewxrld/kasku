@@ -1,0 +1,7 @@
+target/
+data/
+.runtime/
+.env
+.idea/
+*.log
+.DS_Store

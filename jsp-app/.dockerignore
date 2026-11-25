@@ -1,0 +1,6 @@
+target
+.git
+data
+.env
+docs
+.runtime

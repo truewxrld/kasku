@@ -1,0 +1,25 @@
+digraph G {
+ graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.35", ranksep="0.65", splines=polyline];
+ node [shape=plain, fontname="DejaVu Sans", fontsize=10];
+ edge [color="#809589", arrowsize=0.65, fontname="DejaVu Sans", fontsize=8, fontcolor="#52695c"];
+users [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>PENGGUNA</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Nama, email, kata sandi</TD></TR></TABLE>>];
+wallets [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>DOMPET</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Nama, jenis, saldo awal</TD></TR></TABLE>>];
+categories [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>KATEGORI</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Nama, jenis, warna</TD></TR></TABLE>>];
+transactions [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>TRANSAKSI</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Judul, nominal, tanggal</TD></TR></TABLE>>];
+budgets [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>ANGGARAN</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Bulan, batas pengeluaran</TD></TR></TABLE>>];
+goals [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>TARGET TABUNGAN</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Target, dana terkumpul, tenggat</TD></TR></TABLE>>];
+bills [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>TAGIHAN</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Nominal, jatuh tempo, status</TD></TR></TABLE>>];
+debts [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>UTANG DAN PIUTANG</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Pihak, jenis, nominal, terbayar</TD></TR></TABLE>>];
+notes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>CATATAN</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Judul, isi, label</TD></TR></TABLE>>];
+users -> wallets [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> categories [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> transactions [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> budgets [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> goals [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> bills [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> debts [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+users -> notes [taillabel="1",headlabel="0..N",label="memiliki",labeldistance=1.4];
+wallets -> transactions [taillabel="1",headlabel="0..N",label="mencatat"];
+categories -> transactions [taillabel="1",headlabel="0..N",label="mengelompokkan"];
+categories -> budgets [taillabel="1",headlabel="0..N",label="dibatasi per bulan"];
+}

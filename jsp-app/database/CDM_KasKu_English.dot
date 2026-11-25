@@ -1,0 +1,25 @@
+digraph G {
+ graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.35", ranksep="0.65", splines=polyline];
+ node [shape=plain, fontname="DejaVu Sans", fontsize=10];
+ edge [color="#809589", arrowsize=0.65, fontname="DejaVu Sans", fontsize=8, fontcolor="#52695c"];
+users [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>USER</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Name, email, password</TD></TR></TABLE>>];
+wallets [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>WALLET</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Name, type, opening balance</TD></TR></TABLE>>];
+categories [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>CATEGORY</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Name, type, color</TD></TR></TABLE>>];
+transactions [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>TRANSACTION</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Title, amount, date</TD></TR></TABLE>>];
+budgets [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>BUDGET</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Month, spending limit</TD></TR></TABLE>>];
+goals [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>SAVINGS GOAL</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Target, savings, deadline</TD></TR></TABLE>>];
+bills [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>BILL</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Amount, due date, status</TD></TR></TABLE>>];
+debts [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>DEBT OR MONEY OWED</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Person, type, amount, paid</TD></TR></TABLE>>];
+notes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" COLOR="#d9e2d9"><TR><TD BGCOLOR="#254f3e" CELLPADDING="9"><FONT COLOR="white"><B>NOTE</B></FONT></TD></TR><TR><TD ALIGN="LEFT" CELLPADDING="5">Title, text, label</TD></TR></TABLE>>];
+users -> wallets [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> categories [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> transactions [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> budgets [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> goals [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> bills [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> debts [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+users -> notes [taillabel="1",headlabel="0..N",label="owns",labeldistance=1.4];
+wallets -> transactions [taillabel="1",headlabel="0..N",label="records"];
+categories -> transactions [taillabel="1",headlabel="0..N",label="groups"];
+categories -> budgets [taillabel="1",headlabel="0..N",label="has monthly limits"];
+}

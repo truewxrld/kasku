@@ -1,0 +1,366 @@
+{
+  "passed": 90,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "health",
+      "passed": true
+    },
+    {
+      "name": "auth protected",
+      "passed": true
+    },
+    {
+      "name": "register 0",
+      "passed": true
+    },
+    {
+      "name": "register 1",
+      "passed": true
+    },
+    {
+      "name": "CSRF missing rejected",
+      "passed": true
+    },
+    {
+      "name": "wallets CREATE",
+      "passed": true
+    },
+    {
+      "name": "wallets generated id",
+      "passed": true
+    },
+    {
+      "name": "categories CREATE",
+      "passed": true
+    },
+    {
+      "name": "categories generated id",
+      "passed": true
+    },
+    {
+      "name": "transactions CREATE",
+      "passed": true
+    },
+    {
+      "name": "transactions generated id",
+      "passed": true
+    },
+    {
+      "name": "budgets CREATE",
+      "passed": true
+    },
+    {
+      "name": "budgets generated id",
+      "passed": true
+    },
+    {
+      "name": "goals CREATE",
+      "passed": true
+    },
+    {
+      "name": "goals generated id",
+      "passed": true
+    },
+    {
+      "name": "bills CREATE",
+      "passed": true
+    },
+    {
+      "name": "bills generated id",
+      "passed": true
+    },
+    {
+      "name": "debts CREATE",
+      "passed": true
+    },
+    {
+      "name": "debts generated id",
+      "passed": true
+    },
+    {
+      "name": "notes CREATE",
+      "passed": true
+    },
+    {
+      "name": "notes generated id",
+      "passed": true
+    },
+    {
+      "name": "wallets READ detail",
+      "passed": true
+    },
+    {
+      "name": "wallets EDIT form",
+      "passed": true
+    },
+    {
+      "name": "wallets NEW form",
+      "passed": true
+    },
+    {
+      "name": "wallets owner isolation",
+      "passed": true
+    },
+    {
+      "name": "categories READ detail",
+      "passed": true
+    },
+    {
+      "name": "categories EDIT form",
+      "passed": true
+    },
+    {
+      "name": "categories NEW form",
+      "passed": true
+    },
+    {
+      "name": "categories owner isolation",
+      "passed": true
+    },
+    {
+      "name": "transactions READ detail",
+      "passed": true
+    },
+    {
+      "name": "transactions EDIT form",
+      "passed": true
+    },
+    {
+      "name": "transactions NEW form",
+      "passed": true
+    },
+    {
+      "name": "transactions owner isolation",
+      "passed": true
+    },
+    {
+      "name": "budgets READ detail",
+      "passed": true
+    },
+    {
+      "name": "budgets EDIT form",
+      "passed": true
+    },
+    {
+      "name": "budgets NEW form",
+      "passed": true
+    },
+    {
+      "name": "budgets owner isolation",
+      "passed": true
+    },
+    {
+      "name": "goals READ detail",
+      "passed": true
+    },
+    {
+      "name": "goals EDIT form",
+      "passed": true
+    },
+    {
+      "name": "goals NEW form",
+      "passed": true
+    },
+    {
+      "name": "goals owner isolation",
+      "passed": true
+    },
+    {
+      "name": "bills READ detail",
+      "passed": true
+    },
+    {
+      "name": "bills EDIT form",
+      "passed": true
+    },
+    {
+      "name": "bills NEW form",
+      "passed": true
+    },
+    {
+      "name": "bills owner isolation",
+      "passed": true
+    },
+    {
+      "name": "debts READ detail",
+      "passed": true
+    },
+    {
+      "name": "debts EDIT form",
+      "passed": true
+    },
+    {
+      "name": "debts NEW form",
+      "passed": true
+    },
+    {
+      "name": "debts owner isolation",
+      "passed": true
+    },
+    {
+      "name": "notes READ detail",
+      "passed": true
+    },
+    {
+      "name": "notes EDIT form",
+      "passed": true
+    },
+    {
+      "name": "notes NEW form",
+      "passed": true
+    },
+    {
+      "name": "notes owner isolation",
+      "passed": true
+    },
+    {
+      "name": "foreign wallet rejected",
+      "passed": true
+    },
+    {
+      "name": "negative amount rejected",
+      "passed": true
+    },
+    {
+      "name": "unique budget rejected",
+      "passed": true
+    },
+    {
+      "name": "HTML is escaped",
+      "passed": true
+    },
+    {
+      "name": "used wallet deletion blocked",
+      "passed": true
+    },
+    {
+      "name": "transactions UPDATE",
+      "passed": true
+    },
+    {
+      "name": "budgets UPDATE",
+      "passed": true
+    },
+    {
+      "name": "goals UPDATE",
+      "passed": true
+    },
+    {
+      "name": "bills UPDATE",
+      "passed": true
+    },
+    {
+      "name": "debts UPDATE",
+      "passed": true
+    },
+    {
+      "name": "notes UPDATE",
+      "passed": true
+    },
+    {
+      "name": "wallets UPDATE",
+      "passed": true
+    },
+    {
+      "name": "categories UPDATE",
+      "passed": true
+    },
+    {
+      "name": "updated balance",
+      "passed": true
+    },
+    {
+      "name": "search returns record",
+      "passed": true
+    },
+    {
+      "name": "search empty state",
+      "passed": true
+    },
+    {
+      "name": "reports render",
+      "passed": true
+    },
+    {
+      "name": "CSV export",
+      "passed": true
+    },
+    {
+      "name": "transactions DELETE",
+      "passed": true
+    },
+    {
+      "name": "transactions deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "budgets DELETE",
+      "passed": true
+    },
+    {
+      "name": "budgets deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "goals DELETE",
+      "passed": true
+    },
+    {
+      "name": "goals deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "bills DELETE",
+      "passed": true
+    },
+    {
+      "name": "bills deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "debts DELETE",
+      "passed": true
+    },
+    {
+      "name": "debts deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "notes DELETE",
+      "passed": true
+    },
+    {
+      "name": "notes deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "wallets DELETE",
+      "passed": true
+    },
+    {
+      "name": "wallets deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "categories DELETE",
+      "passed": true
+    },
+    {
+      "name": "categories deleted record missing",
+      "passed": true
+    },
+    {
+      "name": "logout",
+      "passed": true
+    },
+    {
+      "name": "login with persisted account",
+      "passed": true
+    },
+    {
+      "name": "unknown module 404",
+      "passed": true
+    }
+  ]
+}
